@@ -5,83 +5,71 @@ if ( !defined('CHECK_INCLUDED') ){
 $breadcrumb='<a href="/index.php">Home</a> &raquo; <a href="/sign_up.php">Sign Up</a>';
 if(isset( $myuser->error_description)) $_SESSION[SESSION_TITLE.'flash'] = $myuser->error_description;
 ?>
-<div class="innercontainer-blk">
-					<p class="heading">Sign Up </p>
-					<form  name="frmupdate" id="ajax-contact-form" method="post" action="<?php echo $current_url; ?>" enctype="multipart/form-data">
-						<div class="sixteen columns"></div>
-						<div class="one-third column">
-							<div class="form-box">
-								<label><?php echo$CAP_first_name; ?> <small>*</small></label>
-								<input type="text" class="text" name="txtfirst_name" id="txtfirst_name" value="">
-							</div><!-- End Box -->
-						</div>
-						<div class="one-third column">
-							<div class="form-box">
-								<label><?php echo$CAP_last_name; ?> <small>*</small></label>
-								<input type="text" class="text" name="txtlast_name" id="txtlast_name" value="">
-							</div><!-- End Box -->
-						</div>
 
+<fieldset>
+    <legend>Sign Up</legend>
+<div class="row" >
+<div class="medium-12 columns">
+<form  name="frmupdate" id="ajax-contact-form" method="post" action="<?php echo $current_url; ?>" enctype="multipart/form-data">
+		 <div class="medium-12 columns ">
+	
+				<div class="medium-5 columns ">
+					<label><?php echo$CAP_first_name; ?> <small>*</small></label>
+					<input type="text" class="text" name="txtfirst_name" id="txtfirst_name" value="">	
+				</div>
+				<div class="medium-5 columns ">
+					<label><?php echo$CAP_last_name; ?> <small>*</small></label>
+					<input type="text" class="text" name="txtlast_name" id="txtlast_name" value="">		
+				</div>
+			</div>
 
-						<div class="sixteen columns"></div>
-						<div class="one-third column">
-							<div class="form-box">
-								<label><?php echo $CAP_password; ?> <small>*</small></label>
-								<input type="password" class="text" name="txtpassword" id="txtpassword" value="">
-							</div><!-- End Box -->
-						</div>
-						<div class="one-third column">
-							<div class="form-box">
-								<label><?php echo $CAP_confirm_password; ?> <small>*</small></label>
-								<input type="password" class="text" name="txtconfirm" id="txtconfirm" value="" >
-							</div><!-- End Box -->
-						</div>
-						<div class="sixteen columns"></div>
+			<div class="medium-12 columns ">
+				<div class="medium-5 columns "><div class="email-field">
+					<label><?php echo $CAP_username; ?> (Email ID) <small>*</small></label>
+					<input type="email" required name="txtusername" id="txtusername" class="text" > <br><div id='username_availability_result' ></div>
+					<input type="button" class=" tiny button" name="check_availability" id="check_availability" value="<?php echo $CAP_available?>" /></div>
+				</div>
+				<div class="medium-5 columns ">
+					<label><?php echo $CAP_password; ?> <small>*</small></label>
+					<input type="password" required class="text" name="txtpassword" id="txtpassword" value="">	
+					<label><?php echo $CAP_confirm_password; ?> <small>*</small></label>
+					 <input type="password" required class="text" name="txtconfirm" id="txtconfirm" value="" >
+				</div>
+			</div>
 
-						<div class="sixteen columns"></div>
-						<div class="one-third column">
+			<div class="medium-12 columns ">
+				<div class="medium-5 columns ">
+					 <label><?php echo $CAP_phone; ?></label>
+					 <input type="text" class="text" name="txtphone" id="txtphone"  value="">
+					 <label><?php echo $CAP_address; ?> </label>
+					<textarea name="txtaddress" id="txtaddress"></textarea>
+				</div>
+				<div class="medium-5 columns ">
+					 <label><?php echo $CAP_captcha; ?> <small>*</small></label><div name="captcha_div" id="captcha_div"><img id="captcha_id" src="/captcha.php"/></div><a href="#" class="tiny button" name="captcha_refresh" id="captcha_refresh"/>Reresh</a><input type="text" class="text" name="txtcaptcha" id="txtcaptcha"  value="">
+				</div>
+		 	</div>
 
-							<div class="form-box">
-								<label><?php echo $CAP_username; ?> (Email ID) <small>*</small></label>
-								<input type="text" name="txtusername" id="txtusername" class="text" > <br><div id='username_availability_result' ></div>
+			<div class="medium-12 columns ">
+				<div class="medium-5 columns ">
+					<p class="exam_checkboxs">  <input type="checkbox" id="agree_checkbox" name="agree_checkbox" />&nbsp;I agree to <a href="/terms_and_conditions.php">terms And Conditions.</a></p>	
+				 </div>
+				<div class="medium-5 columns ">
+					
+				</div>
+		    </div>
+			
+			
+			<div class="medium-12 columns ">
+				<div class="medium-5 columns ">
+					<input type="button" class="tiny success button" id="submit" name="submit" value="<?php echo $CAP_add?>"  /><input type="hidden"  name="h_validate_username" id="h_validate_username"  value="false">
+				 </div>
+				 <div class="medium-5 columns ">
+		
+				 </div>	
+			 </div>
+		</form>
+	</div>
+</div>
+</fieldset>
 
-							</div><!-- End Box -->
-						</div>
-						<div class="one-third column">
-							<div class="form-box">
-								<label>&nbsp;</label>
-								<input type="button" class="button" name="check_availability" id="check_availability" value="<?php echo $CAP_available?>" />
-							</div><!-- End Box -->
-						</div>
-
-						<div class="sixteen columns"></div>
-						<div class="one-third column">
-							<div class="form-box">
-								<label><?php echo $CAP_phone; ?> <small>*</small></label>
-								<input type="text" class="text" name="txtphone" id="txtphone"  value="">
-							</div><!-- End Box -->
-						</div>
-
-
-						<div class="sixteen columns"></div>
-						<div class="one-third column">
-							<div class="form-box">
-								<label><?php echo $CAP_captcha; ?> <small>*</small></label><div name="captcha_div" id="captcha_div"><img id="captcha_id" src="/captcha.php"/></div><input type="button" name="captcha_refresh" id="captcha_refresh" value="Refresh" class="button"/><br> <br><input type="text" class="text" name="txtcaptcha" id="txtcaptcha"  value="">
-
-							</div><!-- End Box -->
-						</div>
-
-						<div class="sixteen columns">
-							<div class="form-box">
-						 <p class="exam_checkboxs">  <input type="checkbox" id="agree_checkbox" name="agree_checkbox" />&nbsp;I agree to <a href="/terms_and_conditions.php">terms And Conditions.</a></p>
-
-							</div>
-						</div>
-
-						<div class="sixteen columns">
-							<div class="form-box">
-							  <input type="button" class="button" id="submit" name="submit" value="<?php echo $CAP_add?>"  /><input type="hidden"  name="h_validate_username" id="h_validate_username"  value="false">
-
-							</div>
-						</div>
-					</form>
+				

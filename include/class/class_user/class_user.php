@@ -44,21 +44,20 @@ class User {
         if ( $this->id == "" || $this->id == gINVALID) {
 		$date=date("Y/m/d H.i:s<br>", time());
 		
-              $strSQL = "INSERT INTO users (username, password,first_name,last_name,email,phone,address,occupation, user_status_id,organization_id,registration_date,activation_token,exam_ids) ";
+              $strSQL = "INSERT INTO users (username,password,first_name,last_name,email,phone,address,occupation, user_status_id,organization_id,registration_date,activation_token) ";
               $strSQL .= "VALUES ('".addslashes(trim($this->username))."','";
               $strSQL .= md5(addslashes(trim($this->password)))."','";
               $strSQL .= addslashes(trim($this->first_name))."','";
               $strSQL .= addslashes(trim($this->last_name))."','";
               $strSQL .= addslashes(trim($this->email))."','";
-	      $strSQL .= addslashes(trim($this->phone))."','";
+	     	  $strSQL .= addslashes(trim($this->phone))."','";
               $strSQL .= addslashes(trim($this->address))."','";
               $strSQL .= addslashes(trim($this->occupation))."','";
               $strSQL .= addslashes(trim($this->user_status_id))."','";
-				$strSQL .= addslashes(trim($this->organization_id))."','";
-	      $strSQL .= "$date','";
-          $strSQL .= addslashes(trim($this->activation_token))."','";
-	      $strSQL .= addslashes(trim($this->exam_ids))."')";
-	      $rsRES = mysql_query($strSQL,$this->connection) or die(mysql_error(). $strSQL );
+			  $strSQL .= addslashes(trim($this->organization_id))."','";
+			  $strSQL .= "$date','";
+		      $strSQL .= addslashes(trim($this->activation_token))."')";
+			  $rsRES = mysql_query($strSQL,$this->connection) or die(mysql_error(). $strSQL );
               if ( mysql_affected_rows($this->connection) > 0 ){
                     $this->id = mysql_insert_id();
 		    $this->error_description = "Registration Successfull.Check Your Email For Account Activaton Link.If You Do NOt Recieve Any Email Please Contact Our Server Administrator.Thank You.";
@@ -77,20 +76,15 @@ class User {
 	    }
             $strSQL .= "first_name = '".addslashes(trim($this->first_name))."',";
             $strSQL .= "last_name = '".addslashes(trim($this->last_name))."',";
-	    if($this->password!=''){	    
-	    $strSQL .= "password = '".addslashes(trim($this->password))."',";
-	    }
+	    
 	    if($this->user_status_id!=''){
-	    if($this->user_status_id==USERSTATUS_IMPORTED){
-	    $strSQL .= "user_status_id = '".USERSTATUS_ACTIVE."',";
-	    }else{
+	   
             $strSQL .= "user_status_id = '".addslashes(trim($this->user_status_id))."',";
 	    }
-	    }
+	    
             $strSQL .= "phone = '".addslashes(trim($this->phone))."',";
             $strSQL .= "email = '".addslashes(trim($this->email))."',";
             $strSQL .= "occupation = '".addslashes(trim($this->occupation))."',";
-            $strSQL .= "exam_ids = '".addslashes(trim($this->exam_ids))."',";
             $strSQL .= "address = '".addslashes(trim($this->address))."'";
 	    $strSQL .= " WHERE id = ".$this->id;
             $rsRES = mysql_query($strSQL,$this->connection) or die(mysql_error(). $strSQL );
@@ -164,7 +158,7 @@ class User {
                 $this->address = mysql_result($rsRES,0,'address');
                 $this->occupation = mysql_result($rsRES,0,'occupation');
 		        $this->registration_date = mysql_result($rsRES,0,'registration_date');
-                $this->exam_ids = mysql_result($rsRES,0,'exam_ids');
+                
                 return true;
         }
         else{
@@ -183,7 +177,7 @@ function get_detail_by_username(){
                 $this->phone = mysql_result($rsRES,0,'phone');
                 $this->address = mysql_result($rsRES,0,'address');
                 $this->occupation = mysql_result($rsRES,0,'occupation');
-		$this->exam_ids = mysql_result($rsRES,0,'exam_ids');
+		
                 return true;
         }
         else{

@@ -18,29 +18,6 @@ function Trim(strInput) {
 
 $(document).ready(function(){
 
-
-var plan_id ="<?php echo $dafault_credit_plan_id; ?>";
-		if(plan_id == -1)
-		{
-			$('#txtcredit').val("");
-			$('#txtcredit').attr('readonly',false);
-		}
-		else
-		{
-			var success_post = $.post('<?php echo $current_url?>',
-	        {
-	          plan_id:plan_id,
-	        });
-	        success_post.done(function (data) {
-	      		if(data){
-					
-                    $('#txtcredit').val(data);
-					$('#txtcredit').attr('readonly',true);
-	      		}
-	       });
-	    }
-
-
  $('#captcha_refresh').click(function () {
 	
 	$('#captcha_id').attr('src',$('#captcha_id').attr('src')+'?'+Math.random());
@@ -151,7 +128,7 @@ check_availability_validation();
     }
 
 	
-
+/*
 	var phone = $('#txtphone').val();  
     if(Trim(phone)==""){
         error += "Empty Phone number.<br/>";
@@ -165,10 +142,7 @@ check_availability_validation();
 	error += "Invalid Phone number.<br/>"; 
 	}
 	}
-	var exam_id = $("select[name='lstexam']").val();  
-    if(Trim(exam_id)==-1){
-        error += "Empty Exam Id.<br/>";
-    }
+	*/
 	
 	if( $("#agree_checkbox").is(':checked') ){}else{
 	error+="Please check the Terms And Conditions.";
@@ -177,18 +151,14 @@ check_availability_validation();
 	popup_alert(error,"","","close");
 			return false;
 	}else{
-	var credit_plan_id =$("select[name='lstcreditplans']").val();
+	
 	var username = $('#txtusername').val()
 	var password = $('#txtpassword').val();
-	if(credit_plan_id==-1){
-	var overlay_panel_content='Your username is '+username+' and password is '+password+' .Please click Ok to proceed to free registration or cancel to edit information.';
+	
+	var overlay_panel_content='Your username is '+username+' and password is '+password+' .Please click Ok to proceed to registration or cancel to edit information.';
 
 		popup_alert(overlay_panel_content,"#","","");
-	}else{
-	var overlay_panel_content='Your username is '+username+' and password is '+password+' .Please click Ok to proceed to payment or cancel to edit information.';
-
-		popup_alert(overlay_panel_content,"#","","");
-	}
+	
 }
 });	
 	});
@@ -201,29 +171,26 @@ var first_name = $('#txtfirst_name').val();
 var last_name = $('#txtlast_name').val();  
 var password = $('#txtpassword').val();  
 var phone = $('#txtphone').val();
-var voucher = ""; 
-if($("#txtvoucher").length >0){ 
-	voucher = $('#txtvoucher').val();  
-}
-
-var exam_ids = $("select[name='lstexam']").val();
-var credit_plan_id = $("select[name='lstcreditplans']").val();
+var address = $('#txtaddress').val();
 
 $.post('register.php',{
 	username:username,
 	first_name:first_name,
 	last_name:last_name,
 	password:password,
-	phone:phone,
-	voucher:voucher,
-	exam_ids:exam_ids,
-	credit_plan_id:credit_plan_id
+	address:address,
+	phone:phone
 	},function(data){
-	if(data!=''){
+	if(data!=2){	
+	if(data==1){
 	
-	window.location.href =data;
+	popup_alert('Registered successfully..Please click here to login your account',"login.php","LOGIN","");
 	
+	}else if(data==0){
+	popup_alert('Error occured in registration please try again..',"sign_up.php","Ok","");
 	}
+	}
+	
 	});
 	
 } );

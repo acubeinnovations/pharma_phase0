@@ -21,8 +21,7 @@ require(ROOT_PATH.'include/class/class_page/class_page.php');	// new Page Class
 
 	//$page->class_list = array("class_user.php");
 
-
-	//$page->script_list_link = array("jquery.min.js");
+	$page->script_list_link = array("jquery.min.js");
 
 
     $index=0;

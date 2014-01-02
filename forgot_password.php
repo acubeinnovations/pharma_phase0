@@ -18,8 +18,8 @@ require(ROOT_PATH.'include/class/class_page/class_page.php');	// new Page Class
     $page->menuconf_list = array("menu_conf.php");
 	$page->connection_list = array("connection.php");
 	$page->function_list = array("functions.php");
-	$page->access_list = array("REGISTERED_USER");
-
+	//$page->access_list = array("REGISTERED_USER");
+	$page->script_list = array("jquery.min.js");
 	$page->class_list = array("class_user.php","class_user_notifications.php");
 
     $index=0;
