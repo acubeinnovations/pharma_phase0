@@ -41,7 +41,7 @@ require(ROOT_PATH.'include/class/class_page/class_page.php');	// new Page Class
 
 
 	$page->content_list = $content_list;
-	$page->module_path 	= '/modules/user/';
+	$page->module_path 	= '/modules/static/';
 	$page->module		= 'dashboard';
 
 
