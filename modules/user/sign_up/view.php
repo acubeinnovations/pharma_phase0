@@ -15,18 +15,18 @@ if(isset( $myuser->error_description)) $_SESSION[SESSION_TITLE.'flash'] = $myuse
 	
 				<div class="medium-5 columns ">
 					<label><?php echo$CAP_first_name; ?> <small>*</small></label>
-					<input type="text" class="text" name="txtfirst_name" id="txtfirst_name" value="">	
+					<input type="text" required class="text" name="txtfirst_name" id="txtfirst_name" value="">	
 				</div>
 				<div class="medium-5 columns ">
 					<label><?php echo$CAP_last_name; ?> <small>*</small></label>
-					<input type="text" class="text" name="txtlast_name" id="txtlast_name" value="">		
+					<input type="text" required class="text" name="txtlast_name" id="txtlast_name" value="">		
 				</div>
 			</div>
 
 			<div class="medium-12 columns ">
 				<div class="medium-5 columns "><div class="email-field">
 					<label><?php echo $CAP_username; ?> (Email ID) <small>*</small></label>
-					<input type="email" required name="txtusername" id="txtusername" class="text" > <br><div id='username_availability_result' ></div>
+					<input type="email" required name="txtusername" id="txtusername" class="text" ><div id='username_availability_result' ></div><br>
 					<input type="button" class=" tiny button" name="check_availability" id="check_availability" value="<?php echo $CAP_available?>" /></div>
 				</div>
 				<div class="medium-5 columns ">
@@ -45,7 +45,7 @@ if(isset( $myuser->error_description)) $_SESSION[SESSION_TITLE.'flash'] = $myuse
 					<textarea name="txtaddress" id="txtaddress"></textarea>
 				</div>
 				<div class="medium-5 columns ">
-					 <label><?php echo $CAP_captcha; ?> <small>*</small></label><div name="captcha_div" id="captcha_div"><img id="captcha_id" src="/captcha.php"/></div><a href="#" class="tiny button" name="captcha_refresh" id="captcha_refresh"/>Reresh</a><input type="text" class="text" name="txtcaptcha" id="txtcaptcha"  value="">
+					 <label><?php echo $CAP_captcha; ?> <small>*</small></label><div name="captcha_div" id="captcha_div"><img id="captcha_id" src="/captcha.php"/></div><a href="#" class="tiny button" name="captcha_refresh" id="captcha_refresh"/>Reresh</a><input required type="text" class="text" name="txtcaptcha" id="txtcaptcha"  value="">
 				</div>
 		 	</div>
 

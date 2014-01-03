@@ -12,7 +12,7 @@ $breadcrumb='<a href="/index.php">Home</a> &raquo; <a href="/login.php">Login</a
 		<div class="medium-12 columns ">
 						<div class="medium-5 columns ">
 							<label>User Name <small>*</small></label>
-							<input name="loginname"  type="text" class="text " id="loginname"  title=""  value="" placeholder="Enter your name" >
+							<input name="loginname"  type="text" required class="text " id="loginname"  title=""  value="" placeholder="Enter your name" >
 						 </div>
 						<div class="medium-5 columns ">
 					
@@ -22,7 +22,7 @@ $breadcrumb='<a href="/index.php">Home</a> &raquo; <a href="/login.php">Login</a
 		<div class="medium-12 columns ">
 						<div class="medium-5 columns ">
 							<label>Password <small>*</small></label>
-							<input name="passwd"  type="password" class="text " placeholder="Enter your password" id="passwd" >
+							<input name="passwd"  type="password" required class="text " placeholder="Enter your password" id="passwd" >
 						 </div>
 						<div class="medium-5 columns ">
 					

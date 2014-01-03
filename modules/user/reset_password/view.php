@@ -17,7 +17,7 @@ if(isset($myuser)) { $_SESSION[SESSION_TITLE.'flash']= $myuser->error_descriptio
 			<form  target="_self" method="post" action="<?php echo $current_url?>" name="frmreset_passwd" id="ajax-contact-form">	
 			<div class="medium-5 columns ">
 				<label><?php echo $CAP_newpassword ?> <small>*</small></label>
-				<input type="password" class="text" name="new_password" id="new_password" value="">
+				<input type="password" class="text" required name="new_password" id="new_password" value="">
 			 </div>
 			<div class="medium-5 columns ">
 		
@@ -27,7 +27,7 @@ if(isset($myuser)) { $_SESSION[SESSION_TITLE.'flash']= $myuser->error_descriptio
 		<div class="medium-12 columns ">
 			<div class="medium-5 columns ">
 				<label><?php echo $CAP_confirmnewpassword ?> <small>*</small></label>
-				<input type="password" class="text" name="confirm_new_password" id="confirm_new_password" value="">
+				<input type="password" class="text" required name="confirm_new_password" id="confirm_new_password" value="">
 			 </div>
 			<div class="medium-5 columns ">
 		

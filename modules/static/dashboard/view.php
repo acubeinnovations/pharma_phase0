@@ -9,7 +9,7 @@
 	<div class="medium-12 columns">
 		
 			<div class="medium-3 columns  subjects">
-			<div class="medium-12 columns">
+			<div class="medium-12 columns"><br>
 				<div class="medium-10 columns ">
 				<a href="#" class="tiny button fixed subject-button" subject="PHYSICS">PHYSICS</a>
 				</div>
@@ -33,8 +33,8 @@
 			<!--second column-->
 			<div class="medium-6 columns chapters">
 				<div class="medium-12 columns ">
-					<div class="medium-10 columns subject ">
-					<a href="#" class="tiny">PHYSICS</a><br><br>
+					<div class="medium-10 columns subject "><br>
+					<a href="#" class="tiny"><b>PHYSICS</b></a><br><br>
 					</div>
 				</div>
 				<div class="medium-12 columns">
@@ -57,7 +57,7 @@
 			<div class="medium-2 columns take-exam">
 				<div class="medium-12 columns">
 					<div class="medium-10 columns exam ">
-					<a href="exam.php?subject='PHYSICS'" class="tiny button">TAKE EXAM</a>	
+					<a href="#" subject="PHYSICS" class="tiny button exam-button">TAKE EXAM</a>	
 					</div>
 				</div>
 			</div>
