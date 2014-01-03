@@ -18,7 +18,7 @@ require(ROOT_PATH.'include/class/class_page/class_page.php');	// new Page Class
     $page->menuconf_list = array("menu_conf.php");
 	$page->connection_list = array("connection.php");
 	$page->function_list = array("functions.php", "functions_forum.php");
-	$page->style_list = array("form_table.css" );
+	$page->script_list = array("jquery.min.js");
 	$page->class_list = array("class_user.php");
 
 
@@ -40,7 +40,7 @@ require(ROOT_PATH.'include/class/class_page/class_page.php');	// new Page Class
 
 	$page->content_list = $content_list;
 	$page->module_path 	= '/modules/user/';
-	$page->module		= 'update_password';
+	$page->module		= 'change_password';
 
 
 

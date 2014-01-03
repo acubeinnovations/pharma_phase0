@@ -22,7 +22,7 @@
 <a href="<?php echo WEB_URL ; ?>/contactus.php" <?php if($this->page_name == "contactus"){?> class="active no-border"<?php  }else{?> class="no-border" <?php } ?> >Contact Us</a>&nbsp;&nbsp;&nbsp;&nbsp;
 <?php if(isset($_SESSION[SESSION_TITLE.'userid'])){ ?>
 
-	<a href="<?php echo $organization_prefix; ?>/update_password.php" <?php if($this->page_name == "update_password"){?> class="active no-border"<?php  }?> >Change Password</a>
+	<a href="<?php echo $organization_prefix; ?>/change_password.php" <?php if($this->page_name == "change_password"){?> class="active no-border"<?php  }?> >Change Password</a>
 	<a href="<?php echo $organization_prefix; ?>/logout.php" class="no-border">Logout</a>
 
 <?php }else{ ?>

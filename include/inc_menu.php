@@ -14,7 +14,7 @@
         <li class="has-dropdown">
           <a href="#">User</a>
           <ul class="dropdown">
-            <li><a href="update_password.php">Change Password</a></li>
+            <li><a href="change_password.php">Change Password</a></li>
             <li class="divider"></li>
           </ul>
         </li>
