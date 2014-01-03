@@ -1,17 +1,17 @@
 <?php
-if (isset($_POST['submit']) && $_POST['submit'] == $CAP_change){
+if (isset($_POST['submit']) && $_POST['submit'] == "submit"){
 $passwd_error = "";
 if ( $_POST['passwd'] == "" ){
-    $passwd_error .= "<br/>".$MSG_empty_password;
+    $passwd_error .= "<br/> Password Empty ";
 }
 if ( $_POST['new_passwd'] == "" ){
-    $passwd_error .= "<br/>".$MSG_empty_new_password;
+    $passwd_error .= "<br/> New Password Empty ";
 }
 if ( $_POST['retype_passwd'] == "" ){
-    $passwd_error .= "<br/>".$MSG_empty_retype_password;
+    $passwd_error .= "<br/> Retype Password Empty";
 }
 if ( $_POST['new_passwd'] != $_POST['retype_passwd'] ){
-    $passwd_error .= "<br/>".$MSG_unmatching_passwords;
+    $passwd_error .= "<br/> Unmatching Passwords";
 }
 if ( $passwd_error == "" ){
       $pass = md5(trim($_POST['passwd']));
@@ -21,14 +21,13 @@ if ( $passwd_error == "" ){
       $myuser->connection = $myconnection;
       $chk = $myuser->change_password($new_pass,$pass);
         if ($chk == false){
-        $_SESSION[SESSION_TITLE.'flash'] = $RD_MSG_incorrect_password;
+        $_SESSION[SESSION_TITLE.'flash'] = "Password seems to be incorrect";
         $_SESSION[SESSION_TITLE.'flash_redirect_page'] = "dashboard.php";
         header( "Location: flash.php");
         exit();
-        //echo $msg_unmatching_que_ans;exit();
         }
         else{
-        $_SESSION[SESSION_TITLE.'flash'] = $RD_MSG_changed_password;
+        $_SESSION[SESSION_TITLE.'flash'] = "Password Updated";
         $_SESSION[SESSION_TITLE.'flash_redirect_page'] = "dashboard.php";
         header( "Location: flash.php");
         exit();

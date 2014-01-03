@@ -6,11 +6,11 @@ $current_url = $_SERVER['PHP_SELF'];
 require(ROOT_PATH.'include/class/class_page/class_page.php');   // new Page Class
 
 $page = new Page;
-	$page->root_path = ROOT_PATH;    
+	$page->root_path = ROOT_PATH;
     $page->current_url = $current_url;  // current url for pages
     $page->title = "Administrator - Import Content";   // page Title
     $page->page_name = 'contents_import';     // page name for menu and other purpose
-    $page->layout = 'admin_default.html';     // layout name
+    $page->layout = 'default.html';     // layout name
     $page->use_dynamic_content = true;                 // enable dynamic content
 
     $page->conf_list = array("conf.php");
