@@ -9,7 +9,7 @@ $page = new Page;
 
 	$page->root_path = ROOT_PATH;
 	$page->current_url = $current_url;	// current url for pages
-	$page->title = "change password";	// page Title
+	$page->title = "Administrator - Change Password";	// page Title
 	$page->page_name = 'change_password';		// page name for menu and other purpose
 	$page->layout = 'default.html';		// layout name
 

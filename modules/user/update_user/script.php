@@ -1,4 +1,4 @@
-<!--
+
 function Trim(strInput) {
     while (true) {
         if (strInput.substring(0, 1) != " ")
@@ -125,7 +125,8 @@ var username = $('#txtusername').val();
 	    }
 	}
  if ( error != "" ){
-       $('#username_availability_result').html(error);
+		str_result = '<div data-alert class="alert-box info radius">'+error + '</div>'
+       $('#username_availability_result').html(str_result);
 return false;
     }else{
 return true;
@@ -152,10 +153,12 @@ function check_availability(){
                 //if the result is 1  
                 if(result == 1){  
                     //show that the username is available  
-                    $('#username_availability_result').html(username + ' is Available');  
+					str_result = '<div data-alert class="alert-box info radius">'+ username + ' is available.</div>'
+                    $('#username_availability_result').html(str_result);  
                 }else{  
-                    //show that the username is NOT available  
-                    $('#username_availability_result').html(username + ' is not Available');  
+                    //show that the username is NOT available
+					str_result = '<div data-alert class="alert-box info radius">'+ username + ' is not available. </div>'  
+                    $('#username_availability_result').html(str_result);  
                 }  
         });  
 }
@@ -164,4 +167,4 @@ function check_availability(){
 
 
 
- -->
+

@@ -5,44 +5,35 @@ if ( !defined('CHECK_INCLUDED') ){
 ?>
 
 <form data-abide target="_self" method="post" action="<?php echo $current_url?>" name="frmlogin">
-    <fieldset>
-
- <legend>Admin Login </legend>
-
-    <div class="row">
-         <div class="large-4 columns">
-         <?php if(isset($myuser->err_desc)) echo $myuser->err_desc;
-        if(isset($login_error)) echo $login_error ;?>
-
-    </div>
-    </div>
-
-    <div class="row">
-        <div class="large-4 columns">
-        <label for="loginname">User Name <small>required</small></label>
-        <input placeholder=""  required pattern="alpha_numeric"  type="text" name="loginname"   >
-        <small class="error">Please Enter Your User Name.</small>
-    </div>
-    </div>
-
-<div class="row">
-        <div class="large-4 columns">
-          <label for="password">Password <small>required</small></label>
-          <input placeholder="" required pattern="alpha_numeric"  type="password" name="passwd" id ="passwd">
-            <small class="error">Password Required.</small>
-        </div>
-    </div>
-
-<div class="row">
-        <div class="large-4 columns">
-            <input class="small button" value="<?php echo $submit_sign_in ?>" type="submit" name="submit" >
-            <input name="h_id" value="<?php if(isset($h_id))echo $h_id; ?>" type="hidden">
-            <input name="h_login" value="pass" type="hidden">
-        </div>
-    </div>
+<fieldset>
+	<legend>Admin Login </legend>
 
 
-    </fieldset>
-    </form>
+	<div class="row">
+		<div class="medium-6 columns">
+			<label for="loginname">User Name <small>required</small></label>
+			<input placeholder=""  required pattern="alpha_numeric"  type="text" name="loginname"   >
+			<small class="error">Please Enter Your User Name.</small>
+		</div>
+	</div>
 
-</div>
+	<div class="row">
+		<div class="medium-6 columns">
+			<label for="password">Password <small>required</small></label>
+			<input placeholder="" required pattern="alpha_numeric"  type="password" name="passwd" id ="passwd">
+			<small class="error">Password Required.</small>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="medium-6 columns">
+			<input class="small button" value="Sign In" type="submit" name="submit" >
+			<input name="h_id" value="<?php if(isset($h_id))echo $h_id; ?>" type="hidden">
+			<input name="h_login" value="pass" type="hidden">
+		</div>
+	</div>
+
+</fieldset>
+</form>
+
+
