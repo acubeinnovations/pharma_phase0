@@ -10,17 +10,16 @@ $page = new Page;
 	$page->current_url = $current_url;	// current url for pages
 	$page->title = "my_daily_test";	// page Title
 	$page->page_name = 'Testimonial';		// page name for menu and other purpose
-	$page->layout = 'admin_default.html';			// layout name
+	$page->layout = 'default.html';			// layout name
 
-    
+
     $page->conf_list = array("conf.php");
     $page->menuconf_list = array("menu_conf.php");
 	$page->connection_list = array("connection.php");
-	$page->function_list = array("functions.php", "functions_forum.php");
+	$page->function_list = array("functions.php");
 	$page->class_list = array("class_user_testimonials.php");
-	$page->script_list = array("jquery.min.js");
-
-	$page->style_list = array("form_table.css");
+	
+	
 	$page->access_list = array("ADMINISTRATOR");
 
     $index=0;
@@ -34,7 +33,7 @@ $page = new Page;
 
 	$page->content_list = $content_list;
 
-     $page->module_path = 'modules/testimonials/'; 
+     $page->module_path = 'modules/testimonials/';
      $page->module = 'update_by_admin';
 
 	$page->display(); //completed page with dynamic cintent will be displayed

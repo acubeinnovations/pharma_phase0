@@ -6,11 +6,11 @@ $current_url = $_SERVER['PHP_SELF'];
 require(ROOT_PATH.'include/class/class_page/class_page.php');	// new Page Class
 
 $page = new Page;
-	$page->root_path = ROOT_PATH;	
+	$page->root_path = ROOT_PATH;
 	$page->current_url = $current_url;	// current url for pages
 	$page->title = "Administrator - Content Search";	// page Title
 	$page->page_name = 'contents_search';		// page name for menu and other purpose
-	$page->layout = 'admin_default.html';		// layout name
+	$page->layout = 'default.html';		// layout name
     $page->use_dynamic_content = true;                 // enable dynamic content
 
     $page->conf_list = array("conf.php");
@@ -20,7 +20,7 @@ $page = new Page;
 	$page->function_list = array("functions.php");
 	$page->class_list = array("class_pagination.php");
 
-	$page->style_list = array("form_table.css","report_table.css");
+	
 
 
 	//$page->access_list = array("ADMINISTRATOR");
@@ -33,7 +33,7 @@ $page = new Page;
 	$page->content_list = $content_list;
 
 
-	$page->module_path = 'modules/content/'; 
+	$page->module_path = 'modules/content/';
 	$page->module = 'search';
 
 	$page->display(); //completed pluggin with dynamic content will be displayed

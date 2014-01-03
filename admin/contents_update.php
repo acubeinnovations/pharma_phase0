@@ -10,7 +10,7 @@ $page = new Page;
 	$page->current_url = $current_url;	// current url for pages
 	$page->title = "Administrator - Content Update";	// page Title
 	$page->page_name = 'contents_update';		// page name for menu and other purpose
-	$page->layout = 'admin_default.html';
+	$page->layout = 'default.html';
     $page->use_dynamic_content = true;                 // enable dynamic content
 
     $page->conf_list = array("conf.php");
@@ -20,7 +20,7 @@ $page = new Page;
 	$page->function_list = array("functions.php");
 	$page->class_list = array("class_pagination.php");
 
-	$page->style_list = array("form_table.css");
+
 	$page->access_list = array("ADMINISTRATOR");
 
 
@@ -32,7 +32,7 @@ $page = new Page;
 
 	$page->content_list = $content_list;
 
-	$page->module_path = 'modules/content/'; 
+	$page->module_path = 'modules/content/';
 	$page->module = 'update';
 	$page->display(); //completed pluggin with dynamic content will be displayed
 ?>

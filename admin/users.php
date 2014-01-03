@@ -10,16 +10,15 @@ $page = new Page;
 	$page->current_url = $current_url;	// current url for pages
 	$page->title = "my_daily_test";	// page Title
 	$page->page_name = 'users';		// page name for menu and other purpose
-	$page->layout = 'admin_default.html';		// layout name
+	$page->layout = 'default.html';		// layout name
 
-    
+
     $page->conf_list = array("conf.php");
     $page->menuconf_list = array("menu_conf.php");
 	$page->connection_list = array("connection.php");
 	$page->function_list = array("functions.php");
 	$page->class_list = array("class_user.php", "class_user_notifications.php","class_pagination.php");
 
-	$page->style_list = array("form_table.css","report_table.css");
 
 	$page->access_list = array("ADMINISTRATOR");
 
@@ -35,7 +34,7 @@ $page = new Page;
 
 	$page->content_list = $content_list;
 
-    $page->module_path = 'modules/user/'; 
+    $page->module_path = 'modules/user/';
      $page->module = 'list_user';
 
 	$page->display(); //completed page with dynamic cintent will be displayed

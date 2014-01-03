@@ -10,9 +10,9 @@ $page = new Page;
 	$page->current_url = $current_url;	// current url for pages
 	$page->title = "Administrator - Login";	// page Title
 	$page->page_name = 'index';		// page name for menu and other purpose
-	$page->layout = 'admin_login.html';		// layout name
+	$page->layout = 'default.html';		// layout name
 
-    
+
     $page->conf_list = array("conf.php");
     $page->menuconf_list = array("menu_conf.php");
 	$page->connection_list = array("connection.php");
@@ -30,7 +30,7 @@ $page = new Page;
 
 	$page->content_list = $content_list;
 
-    $page->module_path = 'modules/administrator/'; 
+    $page->module_path = 'modules/administrator/';
     $page->module = 'login';
 
 

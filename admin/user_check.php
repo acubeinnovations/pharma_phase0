@@ -17,10 +17,9 @@ require(ROOT_PATH.'include/class/class_page/class_page.php');	// new Page Class
     $page->conf_list = array("conf.php");
     $page->menuconf_list = array("menu_conf.php");
 	$page->connection_list = array("connection.php");
-	$page->function_list = array("functions.php", "functions_forum.php");
+	$page->function_list = array("functions.php");
 	
 	$page->class_list = array("class_user.php");
-	$page->script_list = array("jquery.min.js");
 
     $index=0;
     $content_list[$index]['file_name']='inc_menu.php';

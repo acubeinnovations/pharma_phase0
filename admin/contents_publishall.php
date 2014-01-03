@@ -6,13 +6,13 @@ $current_url = $_SERVER['PHP_SELF'];
 require(ROOT_PATH.'include/class/class_page/class_page.php');   // new Page Class
 
 $page = new Page;
-	$page->root_path = ROOT_PATH;    
+	$page->root_path = ROOT_PATH;
     $page->current_url = $current_url;  // current url for pages
     $page->title = "Administrator - Content Publish All";   // page Title
     $page->page_name = 'contents_publishall';     // page name for menu and other purpose
-    $page->layout = 'admin_default.html';     // layout name
+    $page->layout = 'default.html';     // layout name
     $page->use_dynamic_content = true;                 // enable dynamic content
-    
+
     $page->conf_list = array("conf.php");
     $page->menuconf_list = array("admin_menu_conf.php");
     $page->connection_list = array("connection.php");
@@ -30,7 +30,7 @@ $page = new Page;
     $page->content_list = $content_list;
 
 
-    $page->module_path = 'modules/content/'; 
+    $page->module_path = 'modules/content/';
     $page->module = 'contents_publishall';
     $page->display(); //completed pluggin with dynamic content will be displayed
 ?>
