@@ -27,7 +27,7 @@ if ( !defined('CHECK_INCLUDED') ){
 		<div class="medium-12 columns ">
 			<div class="medium-5 columns ">
 				<label><?php echo $CAP_username ?><small>*</small></label>
-				<input type="text" name="username" id="username" class="text" value="<?php if(isset($_POST['username'])){ echo $_POST['username']; } ?>" >
+				<input type="text" name="username" required id="username" class="text" value="<?php if(isset($_POST['username'])){ echo $_POST['username']; } ?>" >
 			 </div>
 			<div class="medium-5 columns ">
 		
@@ -36,7 +36,7 @@ if ( !defined('CHECK_INCLUDED') ){
 
 		<div class="medium-12 columns ">
 			<div class="medium-5 columns ">
-				<label><?php echo $CAP_captcha; ?> <small>*</small></label><div name="captcha_div" id="captcha_div"><img id="captcha_id" src="/captcha.php"/></div><br><input type="button" name="captcha_refresh" id="captcha_refresh" value="Refresh" class="tiny button"/><br><input type="text" class="text" name="txtcaptcha" id="txtcaptcha"  value="">
+				<label><?php echo $CAP_captcha; ?> <small>*</small></label><div name="captcha_div" id="captcha_div"><img id="captcha_id" src="/captcha.php"/></div><br><input type="button" name="captcha_refresh" required id="captcha_refresh" value="Refresh" class="tiny button"/><br><input type="text" class="text" name="txtcaptcha" id="txtcaptcha"  value="">
 			</div>
 				<div class="medium-5 columns ">
 		

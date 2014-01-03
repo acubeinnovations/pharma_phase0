@@ -252,10 +252,10 @@ function check_availability(){
                 //if the result is 1  
                 if(result == 1){  
                     //show that the username is available  
-                    $('#username_availability_result').html(username + ' is Available');  
+                    $('#username_availability_result').html('<font color="green">'+username + ' is Available</font>');  
                 }else{  
                     //show that the username is NOT available  
-                    $('#username_availability_result').html(username + ' is not Available');  
+                    $('#username_availability_result').html('<font color="red">'+username + ' is not Available</font>');  
                 }  
         });  
 }
