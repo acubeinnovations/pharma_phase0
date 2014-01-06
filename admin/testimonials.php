@@ -8,7 +8,7 @@ require(ROOT_PATH.'include/class/class_page/class_page.php');	// new Page Class
 $page = new Page;
 	$page->root_path = ROOT_PATH;
 	$page->current_url = $current_url;	// current url for pages
-	$page->title = "my_daily_test";	// page Title
+	$page->title = "Administrator - Testimonial";	// page Title
 	$page->page_name = 'users';		// page name for menu and other purpose
 	$page->layout = 'default.html';		// layout name
 
@@ -25,10 +25,6 @@ $page = new Page;
     $index=0;
     $content_list[$index]['file_name']='administrator/inc_menu.php';
     $content_list[$index]['var_name']='menu';
-    $index++;
-
-    $content_list[$index]['file_name']='administrator/inc_left_menu.php';
-    $content_list[$index]['var_name']='left_menu';
     $index++;
 
 

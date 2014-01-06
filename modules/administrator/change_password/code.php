@@ -22,16 +22,16 @@ if ( $passwd_error == "" ){
       $chk = $myuser->change_password($new_pass,$pass);
         if ($chk == false){
         $_SESSION[SESSION_TITLE.'flash'] = "Password seems to be incorrect";
-        $_SESSION[SESSION_TITLE.'flash_redirect_page'] = "dashboard.php";
-        header( "Location: flash.php");
+        header( "Location: dashboard.php");
         exit();
         }
         else{
         $_SESSION[SESSION_TITLE.'flash'] = "Password Updated";
-        $_SESSION[SESSION_TITLE.'flash_redirect_page'] = "dashboard.php";
-        header( "Location: flash.php");
+        header( "Location: dashboard.php");
         exit();
         }
+}else{
+ 	$_SESSION[SESSION_TITLE.'flash'] = $passwd_error;
 }
 
 }

@@ -19,6 +19,8 @@ $page = new Page;
 	$page->function_list = array("functions.php");
 	$page->class_list = array("class_administrator_session.php");
 
+	$page->script_list_link = array("jquery.min.js");
+
 	#$page->access_list = array("USERTYPE_ADMIN");
 
     $index=0;

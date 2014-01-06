@@ -5,19 +5,11 @@
 	}
     //This forms most of the HTML contents of User Password Change
 
-?>
+ ?>
 <!-- form start-->
 <form data-abide target="_self" method="post" action="<?php echo $current_url?>" name="frmchange_passwd">
 <fieldset>
-	<legend>Change Password</legend>
-
-	<div class="row">
-		<div class="medium-6 columns">
-			<label for="passwd" >Current 	Password <small>required</small></label>
-			<input placeholder=""  required pattern="password"  type="password" name="passwd" id="passwd" >
-			<small class="error">Empty Password.</small>
-		</div>
-	</div>
+	<legend>Reset Password Password</legend>
 
 	<div class="row">
 		<div class="medium-6 columns">
@@ -28,21 +20,21 @@
 	</div>
 
 	<div class="row">
-		<div class="medium-6 columns"> 
+		<div class="medium-6 columns">
 			<label for="retype_passwd ">Retype password <small>required</small></label>
 			<input placeholder=""  required =""  data-equalto="new_passwd"  type="password" name="retype_passwd" id="retype_passwd" >
 			<small class="error" data-error-message="">Passwords must match.</small>
+		 </div>
+	</div>
+
+	<div class="row">
+		<div class="medium-6 columns">
+			<input class="small button" value="submit" type="submit" name="submit" >
 		</div>
 	</div>
 
-    <div class="row">
-        <div class="medium-6 columns">
-            <input class="small button" value="submit" type="submit" name="submit" >
-        </div>
-    </div>
-
 </fieldset>
 </form>
-<!-- form end-->
 
+<!-- form end-->
 

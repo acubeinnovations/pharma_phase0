@@ -10,7 +10,7 @@ if(isset($_SESSION[SESSION_TITLE.'admin_userid']) && $_SESSION[SESSION_TITLE.'ad
 }
 
 $login_error = "";
-if (isset($_POST['submit']) && $_POST['submit'] == $submit_sign_in){
+if (isset($_POST['submit']) && $_POST['submit'] == "Sign In"){
 if ( $_POST['loginname'] == "" ){
     $login_error .= "Empty Login name";
 }
@@ -23,14 +23,20 @@ if ( $login_error == "" ){
       $myuser = new AdministratorSession($username,$password,$myconnection);
       $chk = $myuser->login();
       if ( $chk == true ){
-          $chk = $myuser->register_login();
-          header ("Location: dashboard.php");
-          exit();
+		$chk = $myuser->register_login();
+		header ("Location: dashboard.php");
+		exit();
       }else{
-	$login_error .= "Invalid Login name/Password.";
+		$login_error .= "Invalid Login name/Password.";
+		$_SESSION[SESSION_TITLE.'flash'] = $login_error;
 	}
 	
+}else{
+ 	$_SESSION[SESSION_TITLE.'flash'] = $login_error;
+
 }
+
+
 
 }
 ?>
