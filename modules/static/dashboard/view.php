@@ -11,22 +11,22 @@
 			<div class="medium-3 columns  subjects">
 			<div class="medium-12 columns"><br>
 				<div class="medium-10 columns ">
-				<a href="#" class="tiny button fixed subject-button" subject="PHYSICS">PHYSICS</a>
+				<a href="#" class="tiny button fixed subject-button" subject="SUBJECT-1">SUBJECT-1</a>
 				</div>
 			</div>
 			<div class="medium-12 columns">
 				<div class="medium-10 columns ">
-				<a href="#" class="tiny button fixed subject-button" subject="CHEMISTRY">CHEMISTRY</a>
+				<a href="#" class="tiny button fixed subject-button" subject="SUBJECT-2">SUBJECT-2</a>
 				</div>
 			</div>
 			<div class="medium-12 columns">
 				<div class="medium-10 columns ">
-				<a href="#" class="tiny button fixed subject-button" subject="MATHS">MATHS</a>	
+				<a href="#" class="tiny button fixed subject-button" subject="SUBJECT-3">SUBJECT-3</a>	
 				</div>
 			</div>
 			<div class="medium-12 columns">
 				<div class="medium-10 columns ">
-				<a href="#" class="tiny button fixed subject-button" subject="ENGLISH">ENGLISH</a>	
+				<a href="#" class="tiny button fixed subject-button" subject="SUBJECT-4">SUBJECT-4</a>	
 				</div>
 			</div>
 			</div>
@@ -34,22 +34,22 @@
 			<div class="medium-6 columns chapters">
 				<div class="medium-12 columns ">
 					<div class="medium-10 columns subject "><br>
-					<a href="#" class="tiny"><b>PHYSICS</b></a><br><br>
+					<a href="#" class="tiny"><b>SUBJECT-1</b></a><br><br>
 					</div>
 				</div>
 				<div class="medium-12 columns">
 					<div class="medium-10 columns chapter1 ">
-					<a href="#" class="tiny link_chapter1 " subject="PHYSICS">CHAPTER1</a><br><br>
+					<a href="#" class="tiny link_chapter1 " subject="SUBJECT-1">CHAPTER1</a><br><br>
 					</div>
 				</div>
 				<div class="medium-12 columns">
 					<div class="medium-10 columns chapter2">
-					<a href="#" class="tiny link_chapter2" subject="PHYSICS">CHAPTER2</a>	<br><br>
+					<a href="#" class="tiny link_chapter2" subject="SUBJECT-1">CHAPTER2</a>	<br><br>
 					</div>
 				</div>
 				<div class="medium-12 columns">
 					<div class="medium-10 columns chapter3">
-					<a href="#" class="tiny link_chapter3" subject="PHYSICS">CHAPTER3</a><br><br>	
+					<a href="#" class="tiny link_chapter3" subject="SUBJECT-1">CHAPTER3</a><br><br>	
 					</div>
 				</div>
 			</div>
@@ -57,7 +57,7 @@
 			<div class="medium-2 columns take-exam">
 				<div class="medium-12 columns">
 					<div class="medium-10 columns exam ">
-					<a href="#" subject="PHYSICS" class="tiny button exam-button">TAKE EXAM</a>	
+					<a href="#" subject="SUBJECT-1" class="tiny button exam-button">TAKE EXAM</a>	
 					</div>
 				</div>
 			</div>
