@@ -2,13 +2,13 @@
 
 if(isset($_POST['subject']) && isset($_POST['chapter1'])){
 $div_content='';
-$div_content='<h1>'.$_POST['subject'].'-Chapter1</h1>';
-$div_content.='<br><p>Outsourcing may be defined as availing services of outside parties for manufacturing, packaging operations and analytical services and other services.
-To insure quality of products manufactured both the principal manufacturer (contract giver) and contract manufacturer (contract accepter) shall understand and agree upon and discharge their respective and collective responsibilities.</p>
+$div_content='<h1>'.$_POST['subject'].'</h1><hr><font size="5">Chapter-1</font><br>';
+$div_content.='<br><p align="justify" >Outsourcing may be defined as availing services of outside parties for manufacturing, packaging operations and analytical services and other services.
+To insure quality of products manufactured both the principal manufacturer (contract giver) and contract manufacturer (contract accepter) shall understand and agree upon and discharge their respective and collective responsibilities.
 There should be document on<br><br>
 i)Guideline for selecting contract manufacturer/contract analytical laboratories<br><br>
 ii)Technical and commercial terms of contract<br><br>
-iii)Quality assurance system which should be built into the system.<div class="medium-12 columns pagination-div"><br><div class="medium-6 columns"></div><div class="medium-6 columns"><div class="medium-5 columns"><a href="#" class="tiny link_chapter1 button radius round" subject="'.$_POST['subject'].'">1</a></div><div class="medium-3 columns"><a href="#" class="tiny link_chapter2 button secondary radius round" subject="'.$_POST['subject'].'">2</a></div><div class="medium-1 columns"><a href="#" class="tiny link_chapter3 button secondary radius round" subject="'.$_POST['subject'].'">3</a></div></div></div>';
+iii)Quality assurance system which should be built into the system.<div class="medium-12 columns pagination-div"><br><div class="medium-6 columns"></div><div class="medium-6 columns"><div class="medium-5 columns"><a href="#" class="tiny link_chapter1 button radius round" subject="'.$_POST['subject'].'">1</a></div><div class="medium-3 columns"><a href="#" class="tiny link_chapter2 button secondary radius round" subject="'.$_POST['subject'].'">2</a></div><div class="medium-1 columns"><a href="#" class="tiny link_chapter3 button secondary radius round" subject="'.$_POST['subject'].'">3</a></div></div></div></p>';
 print $div_content;
 exit();
 
@@ -16,8 +16,8 @@ exit();
 
 if(isset($_POST['subject']) && isset($_POST['chapter2'])){
 $div_content='';
-$div_content='<h1>'.$_POST['subject'].'-Chapter2</h1>';
-$div_content.='<br>A)Following major points needs to be evaluated in the process of selecting a contract manufacturer:<br><br>
+$div_content='<h1>'.$_POST['subject'].'</h1><hr><font size="5">Chapter-2</font><br>';
+$div_content.='<br><p align="justify" >A)Following major points needs to be evaluated in the process of selecting a contract manufacturer:<br><br>
 a) The organization is a structured and integrated one<br><br>
 b) Statutory clearances/licences are complied and environment health and safety consents are available.<br><br>
 c) History of regulatory inspection and compliance available<br><br>
@@ -55,7 +55,7 @@ QUALITY ASSURANCE RESPONSIBILITIES<br><br><br>
 3.In process control limits should be in place.<br><br>
 4.Documentation system shall be discussed and agreed.<br><br>
 5.Equipment and facilities including testing procedures shall be validated as per validation protocol.<br><br>
-6.Application for loan licence as per rule 69 A , 75A etc shall be made And licence obtained before despatching material.<div class="medium-12 columns pagination-div"><br><div class="medium-6 columns"></div><div class="medium-6 columns"><div class="medium-5 columns"><a href="#" class="tiny link_chapter1 button secondary radius round" subject="'.$_POST['subject'].'">1</a></div><div class="medium-3 columns"><a href="#" class="tiny link_chapter2 button  radius round" subject="'.$_POST['subject'].'">2</a></div><div class="medium-1 columns"><a href="#" class="tiny link_chapter3 button secondary radius round" subject="'.$_POST['subject'].'">3</a></div></div></div>';
+6.Application for loan licence as per rule 69 A , 75A etc shall be made And licence obtained before despatching material.<div class="medium-12 columns pagination-div"><br><div class="medium-6 columns"></div><div class="medium-6 columns"><div class="medium-5 columns"><a href="#" class="tiny link_chapter1 button secondary radius round" subject="'.$_POST['subject'].'">1</a></div><div class="medium-3 columns"><a href="#" class="tiny link_chapter2 button  radius round" subject="'.$_POST['subject'].'">2</a></div><div class="medium-1 columns"><a href="#" class="tiny link_chapter3 button secondary radius round" subject="'.$_POST['subject'].'">3</a></div></div></div></p>';
 print $div_content;
 exit();
 
@@ -63,8 +63,8 @@ exit();
 
 if(isset($_POST['subject']) && isset($_POST['chapter3'])){
 $div_content='';
-$div_content='<h1>'.$_POST['subject'].'-Chapter3</h1>';
-$div_content.='<br><p>Approval for carrying out tests for identity, purity, quality and strength of drugs or cosmetics or the raw material used in their manufacture on behalf of licensee for manufacture for sale of drugs are given by the licensing authority with the following conditions:</p>
+$div_content='<h1>'.$_POST['subject'].'</h1><hr><font size="5">Chapter-3</font><br>';
+$div_content.='<br><p align="justify" >Approval for carrying out tests for identity, purity, quality and strength of drugs or cosmetics or the raw material used in their manufacture on behalf of licensee for manufacture for sale of drugs are given by the licensing authority with the following conditions:</p>
 1.The premises where the tests are being carried on shall be well lighted and properly ventilated. Wherever necessary the premises shall be air conditioned so as to maintain the accuracy and functioning the laboratory instruments or to enable the performance of special tests such as stability test, microbiological tests etc.<br><br>
 2.Adequate space having to the nature and number of samples of drugs or cosmetics proposed to be tested.<br><br>
 3.If animal house is required conditions for animal house should be fulfilled.<br><br>
@@ -72,7 +72,7 @@ $div_content.='<br><p>Approval for carrying out tests for identity, purity, qual
 5.All testing’s for drugs and cosmetics shall be under the active direction of an approved qualified experienced staff.<br><br>
 6.Testing for identity, purity, quality and strength shall be carried out by approved experienced staff only.<br><br>
 7.Books and standards recognised under the provisions of Drugs and Cosmetics Act and Rule should be available.<br><br>  
-<div class="medium-12 columns pagination-div"><br><div class="medium-6 columns"></div><div class="medium-6 columns"><div class="medium-5 columns"><a href="#" class="tiny link_chapter1 button secondary radius round" subject="'.$_POST['subject'].'">1</a></div><div class="medium-3 columns"><a href="#" class="tiny link_chapter2 button  secondary radius round" subject="'.$_POST['subject'].'">2</a></div><div class="medium-1 columns"><a href="#" class="tiny link_chapter3 button radius round" subject="'.$_POST['subject'].'">3</a></div></div></div>';
+<div class="medium-12 columns pagination-div"><br><div class="medium-6 columns"></div><div class="medium-6 columns"><div class="medium-5 columns"><a href="#" class="tiny link_chapter1 button secondary radius round" subject="'.$_POST['subject'].'">1</a></div><div class="medium-3 columns"><a href="#" class="tiny link_chapter2 button  secondary radius round" subject="'.$_POST['subject'].'">2</a></div><div class="medium-1 columns"><a href="#" class="tiny link_chapter3 button radius round" subject="'.$_POST['subject'].'">3</a></div></div></div></p>';
 print $div_content;
 exit();
 
