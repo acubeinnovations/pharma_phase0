@@ -30,7 +30,7 @@ i) Avail computerization and  data transmission system.<br><br>
 B)Competent technical team from manufacturing, quality control  and engineering should audit the prospective contract manufacturing facilities and system along with the similar responsible technical team from the contract manufacturer being audited.<br><br>
 C) A written audit report should be prepared to identify shortcoming and recommended corrective actions to comply before starting.<br><br>
 
-GENERAL REQUIREMENTS AND RESPONSIBILITIES<br><br><br>
+GENERAL REQUIREMENTS AND RESPONSIBILITIES<br><br>
 1.The principal manufacturer whose name appears on the labels is considered primarily responsible for technical issues.<br><br>
 j) Adequate and safe facilities for storage, sampling dispensing, manufacturing and testing of input materials, inprocess and finished products are available as per schedule M of Drugs Cosmetics Act 1940 and Rules 1945.<br><br>
 2.A written contract agreement  is drawn between principle manufacturer and the contract manufacturer to avoid any misunderstanding with respect to production and quality control.<br><br>
