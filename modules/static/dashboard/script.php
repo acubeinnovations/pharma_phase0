@@ -4,7 +4,7 @@ $(document).ready(function(){
 $('.subject-button').click(function(){  
 subject=$(this).attr('subject');
 
-var chapter_content='<br><div class="medium-12 columns "><div class="medium-10 columns subject "><a href="#" class="tiny"><b>'+subject+'</b></a><br><br></div></div><div class="medium-12 columns"><div class="medium-10 columns chapter1 "><a href="#" subject="'+subject+'" class="tiny link_chapter1">CHAPTER1</a><br><br></div></div><div class="medium-12 columns"><div class="medium-10 columns chapter2"><a href="#" subject="'+subject+'" class="tiny link_chapter2">CHAPTER2</a><br><br></div></div><div class="medium-12 columns"><div class="medium-10 columns chapter3"><a href="#" subject="'+subject+'" class="tiny link_chapter3">CHAPTER3</a><br><br></div></div>';
+var chapter_content='<br><div class="medium-12 columns "><div class="medium-10 columns subject "><font size="4"><a href="#" class="tiny"><b>'+subject+'</b></a></font><br><br></div></div><div class="medium-12 columns"><div class="medium-10 columns chapter1 "><a href="#" subject="'+subject+'" class="tiny link_chapter1"><font size="2">1.INTRODUCTION</font></a><br><br></div></div><div class="medium-12 columns"><div class="medium-10 columns chapter2"><a href="#" subject="'+subject+'" class="tiny link_chapter2"><font size="2">2.MANUFACTURING AND PACKAGING OUTSOURCING</font></a><br><br></div></div><div class="medium-12 columns"><div class="medium-10 columns chapter3"><a href="#" subject="'+subject+'" class="tiny link_chapter3"><font size="2">3.ANALYTICAL SERVICES OUTSOURCING</font></a><br><br></div></div>';
 
 $('.chapters').html(chapter_content);
 

@@ -34,22 +34,22 @@
 			<div class="medium-6 columns chapters">
 				<div class="medium-12 columns ">
 					<div class="medium-10 columns subject "><br>
-					<a href="#" class="tiny"><b>SUBJECT-1</b></a><br><br>
+					<a href="#" class="tiny"><font size="4"><b>SUBJECT-1</b></a></font><br><br>
 					</div>
 				</div>
 				<div class="medium-12 columns">
 					<div class="medium-10 columns chapter1 ">
-					<a href="#" class="tiny link_chapter1 " subject="SUBJECT-1">CHAPTER1</a><br><br>
+					<a href="#" class="tiny link_chapter1 " subject="SUBJECT-1"><font size='2'>1.INTRODUCTION</font></a><br><br>
 					</div>
 				</div>
 				<div class="medium-12 columns">
 					<div class="medium-10 columns chapter2">
-					<a href="#" class="tiny link_chapter2" subject="SUBJECT-1">CHAPTER2</a>	<br><br>
+					<a href="#" class="tiny link_chapter2" subject="SUBJECT-1"><font size='2'>2.MANUFACTURING AND PACKAGING OUTSOURCING</font></a>	<br><br>
 					</div>
 				</div>
 				<div class="medium-12 columns">
 					<div class="medium-10 columns chapter3">
-					<a href="#" class="tiny link_chapter3" subject="SUBJECT-1">CHAPTER3</a><br><br>	
+					<a href="#" class="tiny link_chapter3" subject="SUBJECT-1"><font size='2'>3.ANALYTICAL SERVICES OUTSOURCING</font></a><br><br>	
 					</div>
 				</div>
 			</div>
